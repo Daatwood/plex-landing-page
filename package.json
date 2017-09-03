@@ -1,0 +1,30 @@
+{
+  "name": "home-page",
+  "version": "1.0.0",
+  "description": "Landing page for plex and more",
+  "main": "app/index.js",
+  "engines": {
+    "node": "7.5.0"
+  },
+  "scripts": {
+    "test": "mocha -R spec app/**/*.spec.js",
+    "start": "node app/index.js"
+  },
+  "author": "Dustin Atwood",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4",
+    "helmet": "^3.4.0",
+    "http-status": "^0.2.5",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.2.0",
+    "should": "^11.1.2",
+    "supertest": "^2.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Daatwood/home-page"
+  }
+}
