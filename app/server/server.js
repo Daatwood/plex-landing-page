@@ -1,7 +1,8 @@
 const express = require('express')
 const morgan = require('morgan')
 const helmet = require('helmet')
-var path = require('path')
+const path = require('path')
+const favicon = require('serve-favicon')
 
 const start = (options) => {
   return new Promise((resolve, reject) => {
@@ -12,6 +13,7 @@ const start = (options) => {
     const app = express()
     app.use(morgan('dev'))
     app.use(helmet())
+    app.use(favicon(path.join(__dirname,'public','favicon.ico')))
     app.use((err, req, res, next) => {
       reject(new Error('Something went wrong!, err:' + err))
       res.status(500).send('Something went wrong!')
