@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta chatset="utf-8">
-  <title>Landing Page</title>
+  <title>Manage Plex</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -10,36 +10,117 @@
 <style>
   body {background-color: lightgray}
   div.card-action {text-shadow: 1px 1px 1px #000; background-color: white;}
+  article {
+    display: block;
+    color: rgba(0, 0, 0, 0.54);
+    text-shadow: 2px 2px 1px rgba(1, 1, 1, 0.2);
+    min-height: 200px !important;
+    width: full;
+    background-color: #77A0A0;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+  article .card-image img{
+    float: right;
+    max-width: 120px;
+    max-height: 120px;
+    height: 120px;
+    width: 120px;
+    margin: 24px auto;
+    text-align: center;
+    border-radius: 100%;
+    background: white;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+  }
+  article .card-title {
+    padding-top: 1em;
+    font-size: 36px;
+  }
+  article .card-details {
+    display: block;
+    font-size: 18px;
+    color: black;
+    text-shadow: 0 0 0;
+  }
+  a {
+    color: black;
+    text-shadow: 2px 2px 1px rgba(1, 1, 1, 0.2);
+  }
+  a:hover {
+    color: lightgray;
+  }
+  i {
+    font-size: 6rem;
+  }
+
 </style>
 <body>
   <div class="section" style="min-height:350px">
     <br>
     <br>
-    <h1 class="header center black-text">//SERVER</h1>
+    <h1 class="header center black-text">Plex Management</h1>
   </div>
-  <div class="container">
-    <div class="row">
-      <div class="col s12 m6 l4">
-        <div class="card black">
-          <div class="card-image">
-            <img src="http://i.imgur.com/XtnAd5g.png">
-            <!-- <span class="card-title orange-text">Plex</span> -->
-          </div>
-          <div class="card-action">
-            <a href="https://video.foxyshark.com" target="_blank">Plex</a>
-          </div>
-        </div>
-        <div class="card white">
-          <div class="card-image">
-            <img src="http://i.imgur.com/0ncZ0f6.png">
-            <!-- <span class="card-title orange-text">Plex</span> -->
-          </div>
-          <div class="card-action">
-            <a class="red-text" href="https://video.foxyshark.com" target="_blank">Couch Potato</a>
+  <div class="row">
+    <article class="amber darken-2 col s12 m12 l8">
+      <div class="card-image">
+        <img src="http://i.imgur.com/XtnAd5g.png">
+      </div>
+      <div class="card-content">
+        <div class="card-heading">
+          <div class="card-title">
+            <h2><a href="ryknzu.asuscomm.com:32400/web/index.html" target="_blank">Plex</a></h2>
           </div>
         </div>
       </div>
-    </div>
+    </article>
+    <article class="deep-orange accent-2 col s12 m6 l4">
+      <div class="card-image">
+        <img src="http://i.imgur.com/MWfPHO4.png">
+      </div>
+      <div class="card-content">
+        <div class="card-heading">
+          <div class="card-title">
+            <h2><a href="http://ryknzu.asuscomm.com:8181" target="_blank">PlexPy</a></h2>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="cyan col s12 m6 l4">
+      <div class="card-image">
+        <img src="http://i.imgur.com/zHdVLA2.png">
+      </div>
+      <div class="card-content">
+        <div class="card-heading">
+          <div class="card-title">
+            <h2><a href="https://ryknzu.asuscomm.com:8112" target="_blank">Deluge</a></h2>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="red accent-2 col s12 m6 l4">
+      <div class="card-image">
+        <img src="http://i.imgur.com/0ncZ0f6.png">
+      </div>
+      <div class="card-content">
+        <div class="card-heading">
+          <div class="card-title">
+            <h2><a href="http://ryknzu.asuscomm.com:5050" target="_blank">Couch Potato</a></h2>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="light-blue lighten-3 col s12 m6 l4">
+      <div class="card-image">
+        <img src="http://i.imgur.com/fFuSNQT.png">
+      </div>
+      <div class="card-content">
+        <div class="card-heading">
+          <div class="card-title">
+            <h2><a href="http://ryknzu.asuscomm.com:8081" target="_blank">Sick Rage</a></h2>
+          </div>
+        </div>
+      </div>
+    </article>
   </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
